@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/CIS641-HW2-Qureshi/static/css/main.c36342b6.css",
-    "main.js": "/CIS641-HW2-Qureshi/static/js/main.3e10a6c5.js",
+    "main.js": "/CIS641-HW2-Qureshi/static/js/main.86f13b97.js",
     "static/media/my-pic.jpeg": "/CIS641-HW2-Qureshi/static/media/my-pic.8a0c70f35ccdb78174d9.jpeg",
     "index.html": "/CIS641-HW2-Qureshi/index.html",
     "main.c36342b6.css.map": "/CIS641-HW2-Qureshi/static/css/main.c36342b6.css.map",
-    "main.3e10a6c5.js.map": "/CIS641-HW2-Qureshi/static/js/main.3e10a6c5.js.map"
+    "main.86f13b97.js.map": "/CIS641-HW2-Qureshi/static/js/main.86f13b97.js.map"
   },
   "entrypoints": [
     "static/css/main.c36342b6.css",
-    "static/js/main.3e10a6c5.js"
+    "static/js/main.86f13b97.js"
   ]
 }

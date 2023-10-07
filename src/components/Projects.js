@@ -65,7 +65,7 @@ function Projects() {
                 <div className="project-details">
                     
                   <p>{project.description}</p>
-                  <p>Link: <a href="${project.link}">Visit Project</a></p>
+                  <p>Link: <a href={project.link}>Visit Project</a></p>
                 </div>
               )}
             </li>
@@ -73,20 +73,20 @@ function Projects() {
         </ul>
         <h2>Projects</h2>
         <ul>
-          {projects.map((project, index) => (
-            <li key={index}>
+          {projects.map((project, index_proj) => (
+            <li key={index_proj}>
               <div
-                className={`project-card ${expandedProject === index ? 'expanded' : ''}`}
-                onClick={() => toggleProject(index)}
+                className={`project-card ${expandedProject === index_proj ? 'expanded' : ''}`}
+                onClick={() => toggleProject(index_proj)}
               >
                 <h3>{project.title}</h3>
                 <p>Date: {project.date}</p>
               </div>
-              {expandedProject === index && (
+              {expandedProject === index_proj && (
                 <div className="project-details">
                     
                   <p>{project.description}</p>
-                  <p>Link: <a href="${project.link}">Visit Project</a></p>
+                  <p>Link: <a href={project.link}>Visit Project</a></p>
                 </div>
               )}
             </li>
