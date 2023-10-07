@@ -28,6 +28,15 @@ const projects = [
   // Add more projects here
 ];
 
+const term_projects = [
+  {
+    title: 'A Journal App',
+    date: 'Oct. 2023 – Present',
+    description: 'A mobile application that allows the user to create daily journal entries by uploading pictures or videos and writing text description. The aim of this project is create a product that can help any person stay motivated by listing down their daily activites. The user can also make their journals public to share with other people and view other public journals created by other others. ',
+    link: 'Link to the Project "Rent a Bike"',
+  },
+];
+
 function Projects() {
     const [expandedProject, setExpandedProject] = useState(null);
   
@@ -41,6 +50,27 @@ function Projects() {
   
     return (
       <section id="projects" className="projects">
+        <h2>Term Projects</h2>
+        <ul>
+          {term_projects.map((project, index) => (
+            <li key={index}>
+              <div
+                className={`project-card ${expandedProject === index ? 'expanded' : ''}`}
+                onClick={() => toggleProject(index)}
+              >
+                <h3>{project.title}</h3>
+                <p>Date: {project.date}</p>
+              </div>
+              {expandedProject === index && (
+                <div className="project-details">
+                    
+                  <p>{project.description}</p>
+                  <p>Link: {project.link}</p>
+                </div>
+              )}
+            </li>
+          ))}
+        </ul>
         <h2>Projects</h2>
         <ul>
           {projects.map((project, index) => (
