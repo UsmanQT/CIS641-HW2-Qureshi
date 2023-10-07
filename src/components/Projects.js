@@ -6,13 +6,13 @@ const projects = [
     title: 'Rent a Bike',
     date: 'Jan. 2023 – May. 2023',
     description: 'A bike rental service provider application developed for both the bike owners and the renter. Deployed the app on expo for testing purposes and successfully tested on 5 users.',
-    link: 'Link to the Project "Rent a Bike"',
+    link: 'https://github.com/UsmanQT/rent-a-bike',
   },
   {
     title: 'Audio Hub',
     date: 'Jan. 2023 – May. 2023',
     description: 'Web Application for Exploring and Playing Music. Developed the website using React JS, NodeJS, express JS and backed powered by MongoDB. Deployed the website live on a virtual instance of Google Cloud Platform (GCP).',
-    link: 'Link to the Project'
+    link: 'https://github.com/pramodpalutla/AudioHub'
   },
   {
     title: 'No Waiting App',
@@ -23,7 +23,7 @@ const projects = [
     title: 'Elexia [Final Year Project]',
     date: 'Feb. 2020 – Feb. 2021',
     description: 'Computer-Based Intervention Game for Dyslexic Children. Collaborated with my supervisors to develop a game using C# and unity gaming engine to enhance learning abilities of Dyslexic Children.',
-    Link: 'Link'
+    Link: 'https://github.com/IusmanQ/Unity-Project-Elexia-Game-for-Dyslexic-children/tree/main/Elexia%201'
   }
   // Add more projects here
 ];
@@ -33,7 +33,7 @@ const term_projects = [
     title: 'A Journal App',
     date: 'Oct. 2023 – Present',
     description: 'A mobile application that allows the user to create daily journal entries by uploading pictures or videos and writing text description. The aim of this project is create a product that can help any person stay motivated by listing down their daily activites. The user can also make their journals public to share with other people and view other public journals created by other others. ',
-    link: 'Link to the Project "Rent a Bike"',
+    link: 'https://github.com/ZachVeenstra/TheTuringTrio',
   },
 ];
 
@@ -65,7 +65,7 @@ function Projects() {
                 <div className="project-details">
                     
                   <p>{project.description}</p>
-                  <p>Link: {project.link}</p>
+                  <p>Link: <a href="${project.link}">Visit Project</a></p>
                 </div>
               )}
             </li>
@@ -86,7 +86,7 @@ function Projects() {
                 <div className="project-details">
                     
                   <p>{project.description}</p>
-                  <p>Link: {project.link}</p>
+                  <p>Link: <a href="${project.link}">Visit Project</a></p>
                 </div>
               )}
             </li>
